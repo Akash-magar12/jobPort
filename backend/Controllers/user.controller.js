@@ -132,13 +132,13 @@ export const userSigninController = async (req, res, next) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    throw new customError(400, "Email and password are required");
+    return res.status(401).json({ message: "Email and password are required" });
   }
 
   const user = await User.findOne({ email });
 
   if (!user) {
-    throw new customError(404, "User not found");
+    return res.status(401).json({ message: "User not found" });
   }
 
   const isMatch = await bcrypt.compare(password, user.password);
