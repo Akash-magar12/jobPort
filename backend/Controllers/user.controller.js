@@ -1,6 +1,6 @@
 //user model import
 import User from "../Models/user.model.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import crypto from "crypto";
 import { emailTemplate, otpTemplate } from "../Templates/mailtemplate.js";
 import sendEmail from "../Utils/mailer.js";
