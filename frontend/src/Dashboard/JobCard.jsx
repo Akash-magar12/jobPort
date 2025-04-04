@@ -64,7 +64,7 @@ const JobCard = ({ job, onApply, appliedJobs = [] }) => {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/apply",
+        "https://jobport-kvn5.onrender.com/api/apply",
         {
           jobId: job._id,
           userId,

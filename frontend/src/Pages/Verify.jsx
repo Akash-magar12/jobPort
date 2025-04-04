@@ -16,7 +16,7 @@ const Verify = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/verify-otp/${email}`,
+        `https://jobport-kvn5.onrender.com/api/verify-otp/${email}`,
         { OTP }
       );
 

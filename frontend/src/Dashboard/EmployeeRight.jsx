@@ -14,7 +14,7 @@ const EmployeeRight = () => {
   // Fetch all jobs from the API
   const fetchJob = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/allJobs");
+      const response = await axios.get("https://jobport-kvn5.onrender.com/api/allJobs");
       setJobs(response.data.jobs);
       setFilteredJobs(response.data.jobs); // Initially, all jobs are displayed
     } catch (error) {

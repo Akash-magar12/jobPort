@@ -13,7 +13,7 @@ const Applied = () => {
     const fetchAppliedJobs = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/user/${userId}/applied-jobs`
+          `https://jobport-kvn5.onrender.com/api/user/${userId}/applied-jobs`
         );
         setAppliedJobs(response.data.appliedJobs || []);
         setLoading(false);
@@ -32,7 +32,7 @@ const Applied = () => {
   const handleDelete = async (appliedJobId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/applied-jobs/${appliedJobId}`,
+        `https://jobport-kvn5.onrender.com/api/applied-jobs/${appliedJobId}`,
         {
           data: { userId }, // Send userId in the request body
         }

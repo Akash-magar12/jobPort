@@ -27,7 +27,7 @@ const CreateJobs = () => {
       const userId = localStorage.getItem("id"); // Get employer ID from localStorage
 
       const response = await axios.post(
-        "http://localhost:5000/api/jobs/create",
+        "https://jobport-kvn5.onrender.com/api/jobs/create",
         {
           ...jobData,
           skills: jobData.skills.split(",").map((skill) => skill.trim()), // Convert skills to array

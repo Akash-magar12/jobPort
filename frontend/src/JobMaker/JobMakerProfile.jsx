@@ -67,7 +67,7 @@ const JobMakerProfile = () => {
 
       const token = localStorage.getItem("token"); // Add this if using auth
       const response = await axios.put(
-        `http://localhost:5000/api/profileChange/${data._id}`,
+        `https://jobport-kvn5.onrender.com/api/profileChange/${data._id}`,
         formDataObj,
         {
           headers: {

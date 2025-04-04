@@ -23,7 +23,7 @@ const ResetPassword = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/reset-password/${email}`,
+        `https://jobport-kvn5.onrender.com/api/reset-password/${email}`,
         {
           newPassword,
         }

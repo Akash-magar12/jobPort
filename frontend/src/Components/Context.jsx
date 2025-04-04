@@ -11,7 +11,7 @@ export const EmailProvider = ({ children }) => {
   const userId = localStorage.getItem("id");
   const userData = async () => {
     try {
-      const user = await axios.get(`http://localhost:5000/api/user/${userId}`);
+      const user = await axios.get(`https://jobport-kvn5.onrender.com/api/user/${userId}`);
       setData(user.data.userData);
     } catch (error) {
       console.log(error);

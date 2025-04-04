@@ -17,7 +17,7 @@ const Forgot = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/forgot-password",
+        "https://jobport-kvn5.onrender.com/api/forgot-password",
         { email }
       );
 

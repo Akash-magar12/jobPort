@@ -83,7 +83,7 @@ const Profile = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/api/profileChange/${data._id}`,
+        `https://jobport-kvn5.onrender.com/api/profileChange/${data._id}`,
         formDataObj,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -113,7 +113,7 @@ const Profile = () => {
       formDataObj.append("resume", newResume); // Matches backend multer field
 
       const response = await axios.put(
-        `http://localhost:5000/api/uploadResume/${data._id}`,
+        `https://jobport-kvn5.onrender.com/api/uploadResume/${data._id}`,
         formDataObj,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

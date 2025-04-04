@@ -13,7 +13,7 @@ function SignupPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/signup",
+        "https://jobport-kvn5.onrender.com/api/signup",
         data
       );
       toast.success(response.data.message);

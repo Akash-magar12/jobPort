@@ -15,7 +15,7 @@ const JobMakerRight = () => {
     const fetchCreatedJobs = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/user/${userId}/created-jobs`
+          `https://jobport-kvn5.onrender.com/api/user/${userId}/created-jobs`
         );
         setCreatedJobs(response.data.jobs || []);
         setLoading(false);
@@ -33,7 +33,7 @@ const JobMakerRight = () => {
 
   const handleDelete = async (jobId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/createdJobs/${jobId}`);
+      await axios.delete(`https://jobport-kvn5.onrender.com/api/createdJobs/${jobId}`);
       setCreatedJobs((prev) => prev.filter((job) => job._id !== jobId));
       toast.success("Job deleted successfully");
     } catch (error) {
@@ -58,7 +58,7 @@ const JobMakerRight = () => {
   const handleUpdate = async (updatedJobData) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/createdJobs/${updatedJobData._id}`,
+        `https://jobport-kvn5.onrender.com/api/createdJobs/${updatedJobData._id}`,
         updatedJobData
       );
       setCreatedJobs((prevJobs) =>
