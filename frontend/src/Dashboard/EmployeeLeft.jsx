@@ -27,7 +27,7 @@ const EmployeeLeft = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-full md:w-64 h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white shadow-lg flex flex-col md:static md:block">
+    <div className="fixed hidden top-0 left-0 w-full md:w-64 h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white shadow-lg md:flex flex-col md:static ">
       {/* Logo Section */}
       <div className="flex items-center justify-center md:justify-start p-4 border-b border-gray-700">
         <img src={logo} alt="Logo" className="w-24 md:w-32" />

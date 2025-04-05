@@ -20,7 +20,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center py-10">
+    <div className="flex px-4 md:px-0 flex-col items-center justify-center py-10">
       <h2 className="text-lg md:text-xl font-medium text-gray-700">
         More than{" "}
         <span className="text-blue-600 font-semibold">20,000 companies</span>{" "}
