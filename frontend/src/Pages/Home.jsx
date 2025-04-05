@@ -6,7 +6,7 @@ import Sponsors from "../Components/Sponser";
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen px-8 md:px-0 mt-4">
+    <div className="w-full min-h-screen ">
       <Hero />
       <PlatForm />
       <Review />
