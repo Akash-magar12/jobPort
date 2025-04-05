@@ -59,7 +59,7 @@ const Review = () => {
   const [selected, setSelected] = useState(reviews[0]);
 
   return (
-    <div className="  md:px-10 py-2 w-full h-[80vh] ">
+    <div className="  md:px-10 mt-10 py-2 w-full h-[80vh] ">
       <div className="flex flex-col gap-1 ">
         <h2 className="text-4xl text-center font-semibold">
           <span className="text-[#60A5FA]">Reviews</span> of people who have{" "}
