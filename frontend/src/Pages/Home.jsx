@@ -1,4 +1,3 @@
-import Companies from "../Components/Companies";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import PlatForm from "../Components/PlatForm";
@@ -11,7 +10,6 @@ const Home = () => {
       <Hero />
       <PlatForm />
       <Review />
-      <Companies />
       <Sponsors />
       <Footer />
     </div>
